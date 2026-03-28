@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
+  <circle cx="100" cy="100" r="80" fill="url(#glowGrad)"/>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="4 3"/>
+
+  <!-- Neural network nodes -->
+  <!-- Left nodes -->
+  <circle cx="42" cy="72" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="42" cy="100" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="42" cy="128" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- Middle-left nodes -->
+  <circle cx="76" cy="60" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="76" cy="86" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="76" cy="114" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="76" cy="140" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- Center node -->
+  <circle cx="100" cy="100" r="10" fill="#c084fc" filter="url(#glow)" opacity="1"/>
+  <circle cx="100" cy="100" r="6" fill="#e9d5ff"/>
+
+  <!-- Middle-right nodes -->
+  <circle cx="124" cy="60" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="124" cy="86" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="124" cy="114" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="124" cy="140" r="4" fill="#a855f7" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- Right nodes -->
+  <circle cx="158" cy="72" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="158" cy="100" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+  <circle cx="158" cy="128" r="4" fill="#7c3aed" filter="url(#glow)" opacity="0.9"/>
+
+  <!-- Connections: left → middle-left -->
+  <line x1="42" y1="72"  x2="76" y2="60"  stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="42" y1="72"  x2="76" y2="86"  stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="42" y1="100" x2="76" y2="86"  stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="42" y1="100" x2="76" y2="114" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="42" y1="128" x2="76" y2="114" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="42" y1="128" x2="76" y2="140" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- Connections: middle-left → center -->
+  <line x1="76" y1="60"  x2="100" y2="100" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.5"/>
+  <line x1="76" y1="86"  x2="100" y2="100" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.7"/>
+  <line x1="76" y1="114" x2="100" y2="100" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.7"/>
+  <line x1="76" y1="140" x2="100" y2="100" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.5"/>
+
+  <!-- Connections: center → middle-right -->
+  <line x1="100" y1="100" x2="124" y2="60"  stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.5"/>
+  <line x1="100" y1="100" x2="124" y2="86"  stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.7"/>
+  <line x1="100" y1="100" x2="124" y2="114" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.7"/>
+  <line x1="100" y1="100" x2="124" y2="140" stroke="#a855f7" stroke-width="0.8" stroke-opacity="0.5"/>
+
+  <!-- Connections: middle-right → right -->
+  <line x1="124" y1="60"  x2="158" y2="72"  stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="124" y1="86"  x2="158" y2="72"  stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="124" y1="86"  x2="158" y2="100" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="124" y1="114" x2="158" y2="100" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="124" y1="114" x2="158" y2="128" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+  <line x1="124" y1="140" x2="158" y2="128" stroke="#7c3aed" stroke-width="0.8" stroke-opacity="0.4"/>
+
+  <!-- "AI" text -->
+  <text x="100" y="170" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#c084fc" letter-spacing="6" filter="url(#glow)">AI</text>
+</svg>

@@ -1,7 +1,7 @@
 baseURL = 'https://pigmon93.github.io/'
 languageCode = 'ko-kr'
 title = 'Seungbeom의 잡동사니들'
-theme = 'PaperMod'
+theme = 'mana'
 paginate = 10
 
 enableRobotsTXT = true
@@ -37,16 +37,9 @@ buildExpired = false
   showtoc = true
   tocopen = false
 
-  [params.assets]
-    disableHLJS = true
+  heroTitleLine1 = 'AI There 👋'
 
-  [params.homeInfoParams]
-    Title = 'AI There 👋'
-    Content = 'AI로 만드는 이런저런 기록들'
 
-  [[params.socialIcons]]
-    name = 'github'
-    url = 'https://github.com/pigmon93'
 
 [taxonomies]
   category = 'categories'
