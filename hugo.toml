@@ -42,7 +42,7 @@ buildExpired = false
 
   [params.homeInfoParams]
     Title = 'Hi there 👋'
-    Content = '기술 블로그입니다.'
+    Content = 'AI로 만드는 이런저런 기록들'
 
   [[params.socialIcons]]
     name = 'github'
