@@ -11,7 +11,7 @@ description: "가스켓 마운트, 1200시간 배터리, 스왑 노브까지 —
 
 ---
 
-![NuPhy Air75 V3 메인](https://nuphy.com/cdn/shop/files/Main01_80323380-e29c-43f8-8edb-e0dc7e4b34d1_1800x1800.png?v=1753784433)
+{{< img src="https://nuphy.com/cdn/shop/files/Main01_80323380-e29c-43f8-8edb-e0dc7e4b34d1_1800x1800.png?v=1753784433" alt="NuPhy Air75 V3 메인" width="900" caption="NuPhy Air75 V3" >}}
 
 NuPhy Air75 V3는 저프로파일 무선 메카니컬 키보드 시장에서 가장 완성도 높은 선택지로 꼽히는 제품이다. V2에서 가스켓 마운트, 압도적 배터리, 스왑 노브까지 실질적으로 모든 것을 업그레이드한 메이저 버전이다.
 
@@ -19,7 +19,7 @@ NuPhy Air75 V3는 저프로파일 무선 메카니컬 키보드 시장에서 가
 
 ## 디자인 & 외형
 
-![NuPhy Air75 V3 측면](https://nuphy.com/cdn/shop/files/Main02_9864a74b-b276-48ad-9300-9b6a8750a2d6_1800x1800.jpg?v=1770183820)
+{{< img src="https://nuphy.com/cdn/shop/files/Main02_9864a74b-b276-48ad-9300-9b6a8750a2d6_1800x1800.jpg?v=1770183820" alt="NuPhy Air75 V3 측면" width="900" caption="13.2mm 초슬림 프로파일" >}}
 
 - 75% 레이아웃 (84키), ANSI / ISO 지원
 - CNC 알루미늄 탑 케이스 + ABS 하단
@@ -32,7 +32,7 @@ NuPhy Air75 V3는 저프로파일 무선 메카니컬 키보드 시장에서 가
 
 ## 핵심 업그레이드: 가스켓 마운트
 
-![NuPhy Air75 V3 타이핑](https://nuphy.com/cdn/shop/files/Main03_85272a42-ffdc-4d95-baab-46a8d00efd32_1800x1800.jpg?v=1770183820)
+{{< img src="https://nuphy.com/cdn/shop/files/Main03_85272a42-ffdc-4d95-baab-46a8d00efd32_1800x1800.jpg?v=1770183820" alt="NuPhy Air75 V3 타이핑" width="900" caption="가스켓 마운트로 업그레이드된 타이핑감" >}}
 
 V2의 트레이 마운트에서 **가스켓 마운트**로 전환한 것이 이번 업그레이드의 핵심이다. 타이핑 시 진동 흡수가 크게 개선되어 소음이 줄고 타이핑감이 훨씬 부드러워졌다. 스크류인 스태빌라이저도 적용해 스페이스바 등 큰 키의 안정성도 개선됐다.
 
@@ -40,7 +40,7 @@ V2의 트레이 마운트에서 **가스켓 마운트**로 전환한 것이 이�
 
 ## 스왑 가능한 노브
 
-![NuPhy Air75 V3 노브](https://nuphy.com/cdn/shop/files/Main04_7d6f3618-9125-40fb-be8d-7465bc9acbad_1800x1800.png?v=1753784433)
+{{< img src="https://nuphy.com/cdn/shop/files/Main04_7d6f3618-9125-40fb-be8d-7465bc9acbad_1800x1800.png?v=1753784433" alt="NuPhy Air75 V3 노브" width="900" caption="우상단 스왑 노브 — 볼륨/스크롤/매크로 자유 설정" >}}
 
 우상단 키를 일반 키캡 또는 다이얼(노브)로 자유롭게 교체할 수 있다. 볼륨, 스크롤, 밝기 등 원하는 기능을 매핑해 사용 가능하며, 로우/하이프로파일 두 가지 높이의 노브를 선택할 수 있다.
 
@@ -48,7 +48,7 @@ V2의 트레이 마운트에서 **가스켓 마운트**로 전환한 것이 이�
 
 ## 압도적인 배터리 수명
 
-![NuPhy Air75 V3 연결](https://nuphy.com/cdn/shop/files/Main05_f75d9bab-3259-4465-b8ab-993fbc9cdead_1800x1800.jpg?v=1770712215)
+{{< img src="https://nuphy.com/cdn/shop/files/Main05_f75d9bab-3259-4465-b8ab-993fbc9cdead_1800x1800.jpg?v=1770712215" alt="NuPhy Air75 V3 연결" width="900" caption="3-mode 무선 연결 지원" >}}
 
 | 조건 | 배터리 수명 |
 |------|------------|
@@ -61,7 +61,7 @@ V2의 트레이 마운트에서 **가스켓 마운트**로 전환한 것이 이�
 
 ## 연결 & 스위치
 
-![NuPhy Air75 V3 동글](https://nuphy.com/cdn/shop/files/2.4_Air75_v3_1800x1800.jpg?v=1770183820)
+{{< img src="https://nuphy.com/cdn/shop/files/2.4_Air75_v3_1800x1800.jpg?v=1770183820" alt="NuPhy Air75 V3 동글" width="900" caption="2.4GHz 동글 수납 슬롯 내장" >}}
 
 **연결 방식 (3-mode)**
 - USB-C 유선
