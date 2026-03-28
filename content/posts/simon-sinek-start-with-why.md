@@ -1,0 +1,76 @@
+---
+title: "위대한 리더는 어떻게 행동을 이끌어내는가 — Simon Sinek"
+date: 2026-03-28
+draft: false
+tags: ["TED", "리더십", "사이먼 사이넥", "골든서클", "경영"]
+categories: ["TED 강의"]
+description: "사이먼 사이넥의 TED 강의 — 위대한 리더와 조직은 '왜(Why)'에서 시작한다"
+---
+
+> 출처: [TED - How Great Leaders Inspire Action, Simon Sinek (2009)](https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
+> 녹화: 2009년 9월 | TEDxPuget Sound | 약 18분
+
+---
+
+## 강의 영상
+
+{{< rawhtml >}}
+<div style="max-width:854px">
+  <div style="position:relative;height:0;padding-bottom:56.25%">
+    <iframe src="https://embed.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"
+      width="854" height="480"
+      style="position:absolute;left:0;top:0;width:100%;height:100%"
+      frameborder="0" scrolling="no" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+{{< /rawhtml >}}
+
+---
+
+## 핵심 메시지: 골든 서클 (The Golden Circle)
+
+사이먼 사이넥은 위대한 리더와 평범한 리더의 차이를 단 하나의 질문으로 설명한다.
+
+> *"왜 당신은 이 일을 하는가? (Start with Why)"*
+
+그는 **골든 서클(Golden Circle)** 이라는 프레임워크를 제시한다.
+
+- **What** (바깥): 우리가 *무엇을* 하는가 — 모든 조직이 안다
+- **How** (중간): *어떻게* 하는가 — 일부 조직이 안다
+- **Why** (중심): *왜* 하는가 — 소수의 리더만 안다
+
+대부분의 기업은 바깥에서 안으로 커뮤니케이션한다. *"우리는 훌륭한 컴퓨터를 만듭니다(What). 디자인이 멋지고 쓰기 쉽습니다(How). 하나 사시겠어요?"*
+
+반면 애플은 안에서 밖으로 말한다. *"우리는 현상에 도전한다고 믿습니다(Why). 우리는 다르게 생각합니다(How). 그래서 아름답고 쓰기 쉬운 컴퓨터를 만듭니다(What). 하나 사시겠어요?"*
+
+---
+
+## 주요 사례
+
+*🍎 Apple*
+애플이 단순한 컴퓨터 회사가 아니라 MP3 플레이어, 스마트폰까지 성공할 수 있었던 이유 — 제품이 아니라 *신념*을 팔기 때문이다.
+
+*✊ 마틴 루터 킹*
+1963년 워싱턴 대행진에 25만 명이 모인 것은 킹 목사가 초대해서가 아니다. 사람들이 *자신의 신념*을 위해 스스로 나온 것이다. 그의 연설은 "I have a plan"이 아닌 *"I have a dream"* 이었다.
+
+*✈️ 라이트 형제*
+풍부한 자금을 가진 경쟁자들을 제치고 라이트 형제가 먼저 비행에 성공한 이유 — 그들은 돈을 위해서가 아니라 *"인류가 하늘을 날 수 있다"* 는 신념으로 움직였기 때문이다.
+
+---
+
+## 핵심 요약
+
+- 사람들은 당신이 *무엇을 하는지*가 아니라 *왜 하는지*에 반응한다
+- 진정한 충성도는 제품이 아닌 목적에서 비롯된다
+- 위대한 리더는 "Why"에서 출발해 사람들의 감정과 신념에 먼저 닿는다
+- 고객과 직원 모두 당신의 신념을 사는 것이지, 제품을 사는 것이 아니다
+
+---
+
+*"People don't buy what you do; they buy why you do it."*
+— Simon Sinek
+
+---
+
+*이 포스트는 TED 강의를 보고 요약·정리한 글입니다.*
