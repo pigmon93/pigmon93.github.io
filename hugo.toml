@@ -39,6 +39,9 @@ buildExpired = false
 
   heroTitleLine1 = 'AI There 👋'
 
+  [params.umami]
+    websiteId = 'dc65b34f-654d-4fb3-a79a-b08a6a6e958f'
+
 
 
 [taxonomies]
