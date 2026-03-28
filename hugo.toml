@@ -1,6 +1,6 @@
 baseURL = 'https://pigmon93.github.io/'
 languageCode = 'ko-kr'
-title = 'My Blog'
+title = 'Seungbeom의 잡동사니들'
 theme = 'PaperMod'
 paginate = 10
 
@@ -15,7 +15,7 @@ buildExpired = false
 
 [params]
   env = 'production'
-  title = 'My Blog'
+  title = 'Seungbeom의 잡동사니들'
   description = '기술 블로그'
   author = 'sb'
   defaultTheme = 'auto'  # auto, light, dark
