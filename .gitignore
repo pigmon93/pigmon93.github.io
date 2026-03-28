@@ -3,3 +3,5 @@ public/
 .omc/
 resources/_gen/
 .DS_Store
+*.swp
+*.swo
