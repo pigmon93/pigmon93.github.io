@@ -17,7 +17,7 @@ buildExpired = false
   env = 'production'
   title = 'My Blog'
   description = '기술 블로그'
-  author = 'pigmon93'
+  author = 'sb'
   defaultTheme = 'auto'  # auto, light, dark
   disableThemeToggle = false
 
