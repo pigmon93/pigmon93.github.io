@@ -51,12 +51,6 @@ CSS만으로 고전 FPS 게임 DOOM을 3D로 렌더링하는 실험적인 프로
 
 안드로이드의 새 사이드로드 설정이 기기를 교체해도 그대로 이전되는 기능이 추가됩니다. Play 스토어 외부 앱 설치 옵션을 더 편리하게 관리할 수 있게 됩니다.
 
-## 🚀 스타트업 / 채용
-
-**[InpharmD (YC W21) Is Hiring – Senior Ruby on Rails Developer](https://inpharmd.com/jobs/senior-ruby-on-rails-engineer)**
-
-Y Combinator 출신 헬스케어 스타트업 InpharmD가 시니어 Ruby on Rails 개발자를 채용 중입니다. 약물 처방 관련 서비스를 개발하는 회사로, 경력 개발자에게 기회가 열려 있습니다.
-
 ---
 
 ## 💬 총평
