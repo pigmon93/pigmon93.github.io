@@ -7,7 +7,7 @@ categories: ["AI/ML"]
 description: "기존 벡터 양자화(VQ)와 차별화되는 TurboQuant의 핵심 원리 — 데이터 비의존성, 무작위 회전, 2단계 양자화 구조를 통해 LLM 성능 저하 없이 메모리를 4배 압축하는 방법"
 ---
 
-![TurboQuant 인포그래픽](/images/turboquant-infographic.webp)
+<img src="/images/turboquant-infographic.webp" alt="TurboQuant 인포그래픽" style="width:100%;" />
 
 대규모 언어 모델(LLM)의 추론 과정에서 KV 캐시(Key-Value Cache)는 메모리를 가장 많이 잡아먹는 요소 중 하나입니다. TurboQuant는 이 문제를 기존 벡터 양자화(Vector Quantization, VQ) 기술과는 근본적으로 다른 방식으로 해결합니다.
 
