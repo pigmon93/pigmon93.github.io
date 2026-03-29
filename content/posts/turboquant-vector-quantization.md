@@ -96,3 +96,9 @@ Llama 3.1 모델 기준, **1.5~3KB 범위에서 품질 저하 없이** KV 캐시
 | TurboQuant | 0.0013 |
 
 TurboQuant는 기존 BasIQ 대비 추론 처리 속도에서 압도적인 차이를 보입니다. 이는 알고리즘의 경량성과 GPU 병렬 처리 최적화가 결합된 결과입니다.
+
+---
+
+## 참고 논문
+
+- [TurboQuant: Data-oblivious Vector Quantization (arXiv:2504.19874)](https://arxiv.org/abs/2504.19874)
