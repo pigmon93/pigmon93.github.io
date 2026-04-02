@@ -27,7 +27,7 @@ OpenRouter에 새로 등재된 Arcee AI의 대형 추론 모델 Trinity Large Th
 
 기존 정규표현식 기반 코드 검색의 한계를 넘어선 새로운 도구를 소개합니다. ripgrep 대비 100배 빠른 속도를 주장하며, 대규모 코드베이스 탐색에 새로운 패러다임을 제시합니다.
 
-**[클로주르(Clojure)를 엔터프라이즈 환경에 도입하기 (2021)](https://blogit.michelin.io/clojure-programming/)**
+**[클로져(Clojure)를 엔터프라이즈 환경에 도입하기 (2021)](https://blogit.michelin.io/clojure-programming/)**
 
 미슐랭 그룹 기술 블로그에 게재된 글로, 함수형 언어 Clojure를 대기업 환경에 적용한 경험과 이점을 공유합니다. 레거시 엔터프라이즈 시스템에 현대적 언어를 도입하는 사례로 주목받고 있습니다.
 
