@@ -31,10 +31,6 @@ VPN 솔루션 Tailscale이 macOS 노치 영역을 활용한 새로운 UI를 선�
 
 ## 🚀 우주 / 혁신
 
-**[Show HN: Made a little Artemis II tracker](https://artemis-ii-tracker.com/)**
-
-NASA 달 유인 임무 Artemis II의 진행 상황을 실시간으로 확인할 수 있는 커뮤니티 제작 웹앱입니다. 개인 개발자가 우주 탐사 프로그램에 대한 관심을 직접 도구로 만들어 공유하는 사례입니다.
-
 **[Tor Alva: The Tallest 3D-Printed Building in the World](https://cacm.acm.org/blogcacm/tor-alva-the-tallest-3d-printed-building-in-the-world/)**
 
 노르웨이에 세워진 Tor Alva는 3D 프린팅 기술로 지어진 세계 최고층 건물입니다. ACM 블로그에서 건설 과정에 사용된 혁신적인 기술과 설계 방법론을 심층 소개하고 있습니다.
@@ -55,4 +51,4 @@ HN 커뮤니티에서 존경받던 컴퓨터 과학자 George Goble이 별세했
 
 오늘 HN 프론트페이지에서는 AI 개발도구에 대한 뜨거운 관심이 단연 두드러졌습니다. Claude Code에 대한 열정적인 후기는 AI 코딩 어시스턴트가 이제 단순한 실험 도구를 넘어 실무의 핵심 도구로 자리잡고 있음을 시사합니다. Memo라는 에소테릭 언어의 등장은 개발자 커뮤니티가 여전히 언어 설계의 근본적 가정에 도전하는 창의적 실험을 즐긴다는 것을 보여줍니다.
 
-인프라 측면에서는 $20 안드로이드폰 SMS 게이트웨이와 Tailscale의 macOS 노치 활용 UI처럼, 있는 것을 최대한 활용하는 실용주의적 DIY 정신이 눈에 띕니다. Artemis II 트래커와 Tor Alva의 3D 프린팅 건축은 기술이 우주와 건설 분야에서도 새로운 가능성을 열고 있음을 보여주며, George Goble의 부고는 커뮤니티에 잔잔한 여운을 남겼습니다.
+인프라 측면에서는 $20 안드로이드폰 SMS 게이트웨이와 Tailscale의 macOS 노치 활용 UI처럼, 있는 것을 최대한 활용하는 실용주의적 DIY 정신이 눈에 띕니다. Tor Alva의 3D 프린팅 건축은 기술이 건설 분야에서도 새로운 가능성을 열고 있음을 보여주며, George Goble의 부고는 커뮤니티에 잔잔한 여운을 남겼습니다.
