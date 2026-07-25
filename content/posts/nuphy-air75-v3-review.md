@@ -1,7 +1,7 @@
 ---
 title: "NuPhy Air75 V3 — 로우프로파일 무선 메카니컬의 새 기준"
 date: 2026-03-28
-draft: false
+draft: true
 tags: ["키보드", "기계식키보드", "NuPhy", "리뷰", "로우프로파일", "무선키보드"]
 categories: ["리서치"]
 description: "가스켓 마운트, 1200시간 배터리, 스왑 노브까지 — NuPhy Air75 V3 완전 분석"
