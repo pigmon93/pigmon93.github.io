@@ -1,0 +1,4 @@
+Source excerpts in this report are from FFmpeg commit 447b72d90f2c0738c973e33532cfd325e2f3c9a5.
+Original authors and copyright notices are available in each linked source file.
+See FFmpeg-LICENSE.md and FFmpeg-COPYING.LGPLv2.1 for upstream licensing.
+The diagram font is a modified subset of Pretendard; see Pretendard-OFL.txt.

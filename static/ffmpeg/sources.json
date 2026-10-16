@@ -1,0 +1,452 @@
+{
+  "repository": "https://github.com/FFmpeg/FFmpeg",
+  "commit": "447b72d90f2c0738c973e33532cfd325e2f3c9a5",
+  "release": "8.0.git",
+  "method": "Static source and API contract analysis; no build or runtime profiling",
+  "references": [
+    {
+      "file": "Makefile",
+      "line": 24,
+      "needle": "ALLFFLIBS =",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/Makefile#L24"
+    },
+    {
+      "file": "configure",
+      "line": 4344,
+      "needle": "avcodec_deps=",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/configure#L4344"
+    },
+    {
+      "file": "fftools/ffmpeg.c",
+      "line": 995,
+      "needle": "int main(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg.c#L995"
+    },
+    {
+      "file": "fftools/ffmpeg.c",
+      "line": 901,
+      "needle": "static int transcode(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg.c#L901"
+    },
+    {
+      "file": "fftools/ffmpeg_opt.c",
+      "line": 1424,
+      "needle": "int ffmpeg_parse_options(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_opt.c#L1424"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.h",
+      "line": 33,
+      "needle": "Overall architecture",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.h#L33"
+    },
+    {
+      "file": "libavformat/demux.c",
+      "line": 1611,
+      "needle": "int av_read_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/demux.c#L1611"
+    },
+    {
+      "file": "libavcodec/bsf.c",
+      "line": 200,
+      "needle": "int av_bsf_send_packet(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/bsf.c#L200"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.c",
+      "line": 404,
+      "needle": "static int task_start(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.c#L404"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.c",
+      "line": 1422,
+      "needle": "static void schedule_update_locked(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.c#L1422"
+    },
+    {
+      "file": "fftools/thread_queue.c",
+      "line": 148,
+      "needle": "int tq_send(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/thread_queue.c#L148"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.c",
+      "line": 1614,
+      "needle": "Transcoding graph has a cycle",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.c#L1614"
+    },
+    {
+      "file": "libavformat/demux.c",
+      "line": 231,
+      "needle": "int avformat_open_input(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/demux.c#L231"
+    },
+    {
+      "file": "libavformat/demux.c",
+      "line": 2639,
+      "needle": "int avformat_find_stream_info(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/demux.c#L2639"
+    },
+    {
+      "file": "libavformat/aviobuf.c",
+      "line": 109,
+      "needle": "AVIOContext *avio_alloc_context(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/aviobuf.c#L109"
+    },
+    {
+      "file": "libavformat/url.h",
+      "line": 54,
+      "needle": "typedef struct URLProtocol",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/url.h#L54"
+    },
+    {
+      "file": "libavformat/mov.c",
+      "line": 13231,
+      "needle": "const FFInputFormat ff_mov_demuxer",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/mov.c#L13231"
+    },
+    {
+      "file": "libavcodec/avcodec.h",
+      "line": 92,
+      "needle": "send/receive encoding and decoding API overview",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/avcodec.h#L92"
+    },
+    {
+      "file": "libavcodec/decode.c",
+      "line": 734,
+      "needle": "int attribute_align_arg avcodec_send_packet(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/decode.c#L734"
+    },
+    {
+      "file": "libavcodec/avcodec.c",
+      "line": 721,
+      "needle": "int avcodec_receive_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/avcodec.c#L721"
+    },
+    {
+      "file": "libavcodec/encode.c",
+      "line": 545,
+      "needle": "int attribute_align_arg avcodec_send_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/encode.c#L545"
+    },
+    {
+      "file": "libavcodec/h264dec.c",
+      "line": 1194,
+      "needle": "const FFCodec ff_h264_decoder",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/h264dec.c#L1194"
+    },
+    {
+      "file": "libavcodec/libx264.c",
+      "line": 1637,
+      "needle": "const FFCodec ff_libx264_encoder",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/libx264.c#L1637"
+    },
+    {
+      "file": "libavfilter/avfiltergraph.c",
+      "line": 1459,
+      "needle": "int avfilter_graph_config(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/avfiltergraph.c#L1459"
+    },
+    {
+      "file": "libavfilter/avfiltergraph.c",
+      "line": 529,
+      "needle": "static int query_formats(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/avfiltergraph.c#L529"
+    },
+    {
+      "file": "libavfilter/avfilter.c",
+      "line": 1455,
+      "needle": "int ff_filter_activate(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/avfilter.c#L1455"
+    },
+    {
+      "file": "fftools/ffmpeg_filter.c",
+      "line": 646,
+      "needle": "static int filter_thread(void *arg)",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_filter.c#L646"
+    },
+    {
+      "file": "libavfilter/framesync.c",
+      "line": 352,
+      "needle": "int ff_framesync_activate(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/framesync.c#L352"
+    },
+    {
+      "file": "libswscale/swscale.c",
+      "line": 1405,
+      "needle": "int sws_scale_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libswscale/swscale.c#L1405"
+    },
+    {
+      "file": "libswresample/swresample.c",
+      "line": 751,
+      "needle": "int attribute_align_arg swr_convert(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libswresample/swresample.c#L751"
+    },
+    {
+      "file": "libavfilter/vf_scale.c",
+      "line": 898,
+      "needle": "sws_scale_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/vf_scale.c#L898"
+    },
+    {
+      "file": "libavfilter/af_aresample.c",
+      "line": 296,
+      "needle": "swr_convert(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/af_aresample.c#L296"
+    },
+    {
+      "file": "libavformat/mux.c",
+      "line": 505,
+      "needle": "int avformat_write_header(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/mux.c#L505"
+    },
+    {
+      "file": "libavformat/mux.c",
+      "line": 1261,
+      "needle": "int av_interleaved_write_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/mux.c#L1261"
+    },
+    {
+      "file": "libavformat/mux.c",
+      "line": 1276,
+      "needle": "int av_write_trailer(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/mux.c#L1276"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.h",
+      "line": 213,
+      "needle": "muxer thread startup is more complicated",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.h#L213"
+    },
+    {
+      "file": "libavformat/movenc.c",
+      "line": 9566,
+      "needle": "const FFOutputFormat ff_mp4_muxer",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/movenc.c#L9566"
+    },
+    {
+      "file": "libavcodec/packet.c",
+      "line": 443,
+      "needle": "int av_packet_ref(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/packet.c#L443"
+    },
+    {
+      "file": "libavutil/frame.c",
+      "line": 552,
+      "needle": "int av_frame_make_writable(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/frame.c#L552"
+    },
+    {
+      "file": "libavutil/buffer.c",
+      "line": 104,
+      "needle": "AVBufferRef *av_buffer_ref(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/buffer.c#L104"
+    },
+    {
+      "file": "libavformat/avformat.h",
+      "line": 2869,
+      "needle": "int av_interleaved_write_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavformat/avformat.h#L2869"
+    },
+    {
+      "file": "libavfilter/buffersrc.h",
+      "line": 53,
+      "needle": "AV_BUFFERSRC_FLAG_KEEP_REF",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavfilter/buffersrc.h#L53"
+    },
+    {
+      "file": "libavcodec/packet.c",
+      "line": 539,
+      "needle": "void av_packet_rescale_ts(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/packet.c#L539"
+    },
+    {
+      "file": "libavutil/mathematics.c",
+      "line": 142,
+      "needle": "int64_t av_rescale_q(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/mathematics.c#L142"
+    },
+    {
+      "file": "fftools/ffmpeg_opt.c",
+      "line": 1487,
+      "needle": "correct_input_start_times();",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_opt.c#L1487"
+    },
+    {
+      "file": "fftools/sync_queue.c",
+      "line": 333,
+      "needle": "int sq_send(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/sync_queue.c#L333"
+    },
+    {
+      "file": "libavutil/hwcontext.h",
+      "line": 63,
+      "needle": "typedef struct AVHWDeviceContext",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/hwcontext.h#L63"
+    },
+    {
+      "file": "libavutil/hwcontext.h",
+      "line": 118,
+      "needle": "typedef struct AVHWFramesContext",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/hwcontext.h#L118"
+    },
+    {
+      "file": "libavutil/hwcontext.c",
+      "line": 448,
+      "needle": "int av_hwframe_transfer_data(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/hwcontext.c#L448"
+    },
+    {
+      "file": "libavutil/hwcontext.c",
+      "line": 801,
+      "needle": "int av_hwframe_map(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/hwcontext.c#L801"
+    },
+    {
+      "file": "fftools/ffmpeg_dec.c",
+      "line": 1415,
+      "needle": "static int hw_device_setup_for_decode(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_dec.c#L1415"
+    },
+    {
+      "file": "fftools/ffprobe.c",
+      "line": 2862,
+      "needle": "static int probe_file(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffprobe.c#L2862"
+    },
+    {
+      "file": "fftools/ffprobe.c",
+      "line": 1913,
+      "needle": "static int read_packets(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffprobe.c#L1913"
+    },
+    {
+      "file": "fftools/ffplay.c",
+      "line": 3840,
+      "needle": "static int read_thread(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffplay.c#L3840"
+    },
+    {
+      "file": "fftools/ffplay.c",
+      "line": 3037,
+      "needle": "static int video_thread(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffplay.c#L3037"
+    },
+    {
+      "file": "libavdevice/alldevices.c",
+      "line": 67,
+      "needle": "void avdevice_register_all(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavdevice/alldevices.c#L67"
+    },
+    {
+      "file": "configure",
+      "line": 4348,
+      "needle": "avfilter_deps=",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/configure#L4348"
+    },
+    {
+      "file": "configure",
+      "line": 8816,
+      "needle": "print_enabled_components libavcodec/codec_list.c",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/configure#L8816"
+    },
+    {
+      "file": "configure",
+      "line": 8823,
+      "needle": "print_enabled_components libavformat/protocol_list.c",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/configure#L8823"
+    },
+    {
+      "file": "libavcodec/allcodecs.c",
+      "line": 950,
+      "needle": "const AVCodec *av_codec_iterate(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/allcodecs.c#L950"
+    },
+    {
+      "file": "libavutil/cpu.c",
+      "line": 109,
+      "needle": "int av_get_cpu_flags(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavutil/cpu.c#L109"
+    },
+    {
+      "file": "libavcodec/pthread.c",
+      "line": 72,
+      "needle": "av_cold int ff_thread_init(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/libavcodec/pthread.c#L72"
+    },
+    {
+      "file": "fftools/thread_queue.c",
+      "line": 258,
+      "needle": "void tq_send_finish(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/thread_queue.c#L258"
+    },
+    {
+      "file": "fftools/thread_queue.c",
+      "line": 274,
+      "needle": "void tq_receive_finish(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/thread_queue.c#L274"
+    },
+    {
+      "file": "fftools/ffmpeg_sched.c",
+      "line": 2770,
+      "needle": "int sch_stop(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_sched.c#L2770"
+    },
+    {
+      "file": "fftools/ffmpeg.c",
+      "line": 937,
+      "needle": "/* write the trailer if needed */",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg.c#L937"
+    },
+    {
+      "file": "fftools/ffmpeg_demux.c",
+      "line": 2256,
+      "needle": "int ifile_open(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_demux.c#L2256"
+    },
+    {
+      "file": "fftools/ffmpeg_mux_init.c",
+      "line": 3613,
+      "needle": "int of_open(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_mux_init.c#L3613"
+    },
+    {
+      "file": "fftools/ffmpeg_dec.c",
+      "line": 692,
+      "needle": "static int packet_decode(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_dec.c#L692"
+    },
+    {
+      "file": "fftools/ffmpeg_enc.c",
+      "line": 683,
+      "needle": "static int encode_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_enc.c#L683"
+    },
+    {
+      "file": "fftools/ffmpeg_mux.c",
+      "line": 230,
+      "needle": "av_interleaved_write_frame(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/fftools/ffmpeg_mux.c#L230"
+    },
+    {
+      "file": "tests/Makefile",
+      "line": 304,
+      "needle": "fate::",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/tests/Makefile#L304"
+    },
+    {
+      "file": "tests/checkasm/checkasm.c",
+      "line": 401,
+      "needle": "int main(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/tests/checkasm/checkasm.c#L401"
+    },
+    {
+      "file": "doc/examples/transcode.c",
+      "line": 554,
+      "needle": "int main(",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/447b72d90f2c0738c973e33532cfd325e2f3c9a5/doc/examples/transcode.c#L554"
+    }
+  ]
+}

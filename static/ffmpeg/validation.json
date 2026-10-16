@@ -1,0 +1,50 @@
+{
+  "ko": {
+    "chapters": 18,
+    "svg_count": 13,
+    "inline_svg_byte_parity": true,
+    "local_links_exist": true,
+    "unique_document_ids": true,
+    "external_runtime_dependencies": false,
+    "html_bytes": 2631772
+  },
+  "en": {
+    "chapters": 18,
+    "svg_count": 13,
+    "inline_svg_byte_parity": true,
+    "local_links_exist": true,
+    "unique_document_ids": true,
+    "external_runtime_dependencies": false,
+    "html_bytes": 1369710
+  },
+  "source_commit": "447b72d90f2c0738c973e33532cfd325e2f3c9a5",
+  "source_anchors_verified_against_checkout": 74,
+  "svg_source_lint": {
+    "files": 26,
+    "errors": 0,
+    "warnings": 0
+  },
+  "browser_review": {
+    "engine": "Codex in-app browser",
+    "viewport_css_px": [
+      1280,
+      720
+    ],
+    "ko_and_en_canvas_text_bounds": "pass",
+    "en_card_text_bounds": "pass",
+    "language_switch": "pass",
+    "diagram_modal": "pass",
+    "expand_and_collapse_9_excerpts": "pass",
+    "visual_review": "Korean pipeline and English scheduler diagrams inspected at enlarged scale; both report headers inspected",
+    "png_export": "not performed, as requested",
+    "ko_card_text_bounds": "pass"
+  },
+  "deployment": "not published",
+  "ffmpeg_build_or_runtime_tests": "not performed",
+  "packaging": {
+    "public_path": "/ffmpeg/",
+    "svg_directory": "images/",
+    "site_generator": "Hugo",
+    "deployment": "not published"
+  }
+}

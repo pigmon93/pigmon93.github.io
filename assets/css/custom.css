@@ -25,3 +25,44 @@
   background-color: #ffffff;
   background-image: none;
 }
+
+/* Architecture index: a compact title-and-description list. */
+.architectures-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.architecture-entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.architecture-entry:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.architecture-entry h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.architecture-entry h2 a {
+  color: var(--text-primary);
+  text-underline-offset: 0.25em;
+}
+
+.architecture-entry h2 a:hover {
+  color: var(--accent-primary);
+}
+
+.architecture-entry h2 a:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 4px;
+}
+
+.architecture-entry p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}

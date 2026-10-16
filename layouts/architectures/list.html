@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="list-container architectures-page">
+    <header class="list-header">
+      <h1 class="list-title">{{ .Title }}</h1>
+      <p class="list-description">{{ .Description }}</p>
+    </header>
+    <ul class="architectures-list">
+      {{ range hugo.Data.architectures }}
+        <li class="architecture-entry">
+          <h2><a href="{{ .url | relURL }}">{{ .title }}</a></h2>
+          <p>{{ .description }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

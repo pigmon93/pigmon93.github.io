@@ -73,6 +73,11 @@ buildExpired = false
     url = '/tags/'
     weight = 20
   [[menu.main]]
+    identifier = 'architectures'
+    name = 'Architectures'
+    url = '/architectures/'
+    weight = 25
+  [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = '/about/'

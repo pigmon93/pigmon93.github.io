@@ -1,0 +1,3 @@
+- title: FFmpeg
+  description: "미디어 라이브러리와 CLI 스케줄러의 구조, 데이터 흐름, 메모리·시간축을 분석합니다."
+  url: /ffmpeg/
