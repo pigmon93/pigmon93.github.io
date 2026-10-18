@@ -939,13 +939,16 @@ setNameBtn.addEventListener("click", async () => {
   const name = nameInput.value.trim();
   if (!name || !node) return;
   try {
-    await node.set_name(name);
+    const announced = await node.set_name(name);
     myDisplayName = name;
     myAvatarEl.textContent = avatarInitials(name);
     myAvatarEl.style.background = avatarGradient(name);
     safeSetStorage(STORAGE_NICK_KEY, name);
     await syncServerlessDiscovery();
     appendSystemLog(`🏷️ 내 닉네임이 <b>${escapeHtml(name)}</b>(으)로 변경되었습니다.`);
+    if (announced === false) {
+      appendSystemLog("⚠️ 닉네임은 저장했지만 참여자에게 알리지 못했습니다. 연결 상태를 확인해 주세요.");
+    }
   } catch (e) {
     appendSystemLog(`⚠️ 닉네임 설정 실패: ${escapeHtml(String(e))}`);
   }
