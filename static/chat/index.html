@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>remote-chat | P2P 메신저 & 파일 공유</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <!-- 화면 구성과 반응형 스타일은 별도 파일에서 관리한다. -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+    <div class="app-shell">
+      <!-- 좌측 사이드바: 채팅방·참여자 목록과 설정 진입점 -->
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-bar">
+          <div class="brand-logo">
+            <div class="brand-icon">⚡</div>
+            <div class="brand-text">
+              <h1>remote-chat</h1>
+              <p>Serverless P2P Mesh</p>
+            </div>
+          </div>
+          <button class="mobile-close-btn" id="close-sidebar-btn" aria-label="메뉴 닫기">✕</button>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-header">
+            <span>채팅방</span>
+            <span class="room-count-pill" id="room-count-badge">1</span>
+          </div>
+          <div class="room-create-box">
+            <input type="text" id="new-room-input" aria-label="새 채팅방 이름" placeholder="새 채널 이름 (예: dev)" disabled />
+            <button class="btn-primary" id="create-room-btn" disabled>+ 개설</button>
+          </div>
+        </div>
+
+        <ul id="room-list"></ul>
+
+        <!-- 현재 채널 온라인 참여자 목록 -->
+        <div class="online-members-box">
+          <div class="section-header">
+            <span>현재 방 접속자</span>
+            <span class="room-count-pill" id="online-member-count">1</span>
+          </div>
+          <div class="online-members-list" id="online-members-list"></div>
+        </div>
+
+        <div class="sidebar-settings"><button id="open-settings-btn" class="btn-secondary" aria-haspopup="dialog">설정</button></div>
+      </aside>
+
+      <!-- 우측 메인 채팅창 -->
+      <section class="chat-panel" id="chat-panel">
+        <div class="drop-overlay" id="drop-overlay">
+          <div class="drop-icon">📂</div>
+          <div class="drop-title">여기에 파일을 놓으면 즉시 공유됩니다</div>
+        </div>
+
+        <header class="chat-header">
+          <div class="chat-header-left">
+            <button class="mobile-menu-btn" id="open-sidebar-btn" aria-label="채팅방 목록 열기" aria-controls="sidebar" aria-expanded="false">☰</button>
+            <div class="room-title-box">
+              <h2>
+                <span id="current-room-label">#general</span>
+                <span id="e2ee-badge" class="e2ee-badge">🔒 암호화됨</span>
+              </h2>
+              <p id="scope-subtitle">같은 링크로 함께하는 대화</p>
+            </div>
+          </div>
+
+          <div class="chat-header-right">
+            <button id="copy-link-btn" class="header-action-btn" title="현재 방 초대 링크 복사">
+              🔗 <span>링크 복사</span>
+            </button>
+            <div id="status" class="status-badge">
+              <span class="status-dot"></span>
+              <span id="status-text">WASM 초기화 중...</span>
+            </div>
+          </div>
+        </header>
+
+        <main id="chat-log"></main>
+
+        <div class="typing-bar" id="typing-bar"></div>
+
+        <footer class="chat-composer">
+          <label class="attach-btn" title="파일 또는 이미지 첨부 (드래그 앤 드롭 또는 Ctrl+V 붙여넣기 지원)">
+            📎
+            <input type="file" id="file-input" aria-label="첨부 파일" hidden disabled />
+          </label>
+
+          <div class="composer-input-wrap">
+            <textarea
+              id="msg-input" aria-label="메시지"
+              rows="1"
+              placeholder="메시지 입력 · Shift+Enter로 줄바꿈"
+              disabled
+            ></textarea>
+            <button id="send-btn" disabled>전송</button>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <!-- 설정은 모달 안에 모아 대화 영역을 확보한다. showModal이 배경 접근과 포커스를 관리한다. -->
+    <dialog id="settings-dialog" aria-labelledby="settings-title">
+      <header class="settings-heading"><h2 id="settings-title">설정</h2><button id="close-settings-btn" class="btn-secondary" aria-label="설정 닫기">닫기</button></header>
+      <section class="settings-section" aria-labelledby="profile-settings-title">
+        <h3 id="profile-settings-title">프로필 및 연결</h3>
+        <!-- 노드 식별 정보와 키 관리. 재연결 설정도 이 영역에 모은다. -->
+        <div class="profile-card">
+          <div class="profile-top">
+            <div class="profile-badge">
+              <div class="avatar" id="my-avatar">ME</div>
+              <div class="node-meta">
+                <span class="key-label">Node ID (<span id="key-state">확인 중</span>)</span>
+                <code id="my-id">-</code>
+              </div>
+            </div>
+            <button id="reset-key-btn" class="btn-danger-ghost" disabled title="이 사이트의 채팅 기록, 방 암호, 설정과 비밀키를 삭제합니다">
+              데이터 초기화
+            </button>
+          </div>
+
+          <form id="relay-settings-form">
+            <label for="relay-url-input">릴레이 서버 (HTTPS URL)</label>
+            <div class="nick-edit-row">
+              <input type="url" id="relay-url-input" placeholder="https://relay.example.com" required aria-describedby="relay-settings-status" />
+              <button type="submit" class="btn-secondary">저장·재연결</button>
+            </div>
+            <p id="relay-settings-status" role="status">같은 방의 참여자는 동일한 릴레이를 사용하세요.</p>
+          </form>
+          <div class="nick-edit-row">
+            <input type="text" id="name-input" aria-label="닉네임" placeholder="닉네임 입력" />
+            <button id="set-name-btn" class="btn-secondary" disabled>변경</button>
+          </div>
+        </div>
+      </section>
+      <!-- 알림과 현재 방의 보안·기록 작업. 기존 ID를 유지해 연결 동작을 보존한다. -->
+      <section class="settings-section" aria-labelledby="room-settings-title">
+        <h3 id="room-settings-title">현재 채팅방</h3>
+        <div class="settings-actions">
+          <button id="clear-chat-btn" class="header-action-btn" title="현재 방 대화 기록 비우기">
+            🧹 <span>대화 지우기</span>
+          </button>
+          <button id="secret-room-btn" class="header-action-btn" title="현재 방 종단간 암호화 비밀번호(패스프레이즈) 설정">
+            🔒 <span id="secret-room-btn-text">비밀방 암호</span>
+          </button>
+          <button id="notify-btn" class="notify-btn" title="새 메시지 브라우저 알림 설정">
+            🔔 <span id="notify-text">알림 켜기</span>
+          </button>
+        </div>
+        <div class="secret-room-bar" id="secret-room-bar">
+          <span>🔐 <b>비밀방 암호(AES-GCM):</b></span>
+          <input type="password" id="room-pass-input" aria-label="현재 방 암호" placeholder="비밀번호 입력 (비우면 일반 공개 대화)" autocomplete="off" />
+          <button class="btn-secondary" id="apply-room-pass-btn">적용</button>
+          <button class="btn-danger-ghost" id="clear-room-pass-btn">해제</button>
+        </div>
+
+      </section>
+    </dialog>
+
+    <!-- 설정 조작은 WASM 로딩과 독립적으로 초기화한다. -->
+    <script type="module" src="./settings.mjs"></script>
+    <!-- 네트워크 연결, 암호화, 대화 렌더링을 담당하는 앱 진입점. -->
+    <script type="module" src="./app.mjs"></script>
+  </body>
+</html>
